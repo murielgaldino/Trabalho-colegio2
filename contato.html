@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Estilos para o cabeçalho e navbar */
+  header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  /* Estilos para a seção de contato */
+  .contact-section {
+    padding: 40px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="inicio.html">Início</a></li>
+      <li><a href="produto.html">Produtos</a></li>
+      <li><a href="main.html">Sobre Nós</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<div class="contact-section">
+  <h2>Entre em Contato</h2>
+  <div class="contact-form">
+    <form action="enviar-contato.php" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

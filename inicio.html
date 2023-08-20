@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="inicio.css">
+<style>
+  /* Estilos para o cabeçalho e navbar */
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="produto.html">loja</a></li>
+      <li><a href="main.html">sobre nos </a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+  
+  <div class="search-bar">
+  <input type="text" id="product-search" placeholder="Pesquisar produtos">
+  <button type="button" onclick="searchProducts()">Pesquisar</button>
+</div>
+
+<div class="image-container">
+  <!-- Não há conteúdo aqui, pois estamos usando apenas uma imagem de fundo -->
+</div>
+  <script>
+  
+  function searchProducts() {
+    var searchTerm = document.getElementById("product-search").value;
+    // Você pode usar o valor de "searchTerm" para realizar a pesquisa no banco de dados ou em algum outro lugar.
+    console.log("Pesquisando por: " + searchTerm);
+    
+    
+  }
+  
+  
+  </script>
+  
+  
+  
+  
+</body>
+</html>
